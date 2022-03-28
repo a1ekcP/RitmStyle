@@ -71,8 +71,8 @@ h2.title{
     font-weight: 700;
     font-size: 42px;
     line-height: 140%;
-    text-align: center;
-    color: black;
+    color: #FFFFFF;
+    display: inline-block;
 
     margin-bottom: 100px;
     padding-left: 73px;
@@ -152,3 +152,146 @@ h2.main__title{
     font-family: 'El Messiri';
 }
 /*----------------MAIN---------------*/
+
+
+/*----------------SEANSES---------------*/
+.seanses{
+    text-align: center;
+}
+
+.seanses__wrap{
+    display: flex;
+}
+
+.seanses__item{
+    margin-right: 24px;
+    width: 33.33%;
+}
+.seanses__item:last-child{
+    margin-right: 0;
+}
+.seanses__item:not(:first-child){
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.seanses__item img{
+    border-radius: 10px;
+}
+.seanses__item-top,
+.seanses__item-bottom{
+    padding-bottom: 62%;
+}
+.seanses__item-big{
+    height: 100%;
+}
+figure{
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: start;
+    max-width: 336px;
+}
+figcaption > a{
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+    display: block;
+}
+figcaption > a:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.capt-big{
+    bottom: 50px;
+    left: 50px;
+}
+.capt-small{
+    bottom: 30px;
+    left: 40px;
+}
+/*----------------SEANSES---------------*/
+
+
+/*----------------REVIEWS---------------*/
+.reviews__container{
+    max-width: 1766px;
+    padding: 0 15px;
+    
+    text-align: center;
+}
+
+.reviews__items{
+    display: flex;
+    margin-bottom: 60px;
+}
+.reviews__item{
+    padding: 40px 45px;
+    background: #018ABE;
+    border-radius: 10px;
+    width: 33.333%;
+    margin-right: 118px;
+
+    opacity: 0.4;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.reviews__item:last-child{
+    margin-right: 0;
+}
+.reviews__item-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+    margin-bottom: 15px;
+}
+.reviews__item-text{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+    margin-bottom: 15px;
+}
+.reviews__item-text:last-child{
+    margin-bottom: 0;
+}
+
+.reviews__item:hover{
+    transform: scale(127%, 122%);
+    transition: 0.8s;
+    opacity: 1;
+}
+.reviews__item:hover ~ .reviews__item-title{
+    font-size: 20px;
+}
+.reviews__item:hover ~ .reviews__item-text{
+    font-size: 14px;
+}
+
+.reviews__pages{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.reviews__pages-prev,
+.reviews__pages-curent,
+.reviews__pages-next{
+    width: 16px;
+    height: 16px;
+
+    background: #FFFFFF;
+    opacity: 0.4;
+    border-radius: 3px;
+}
+/*----------------REVIEWS---------------*/
