@@ -177,7 +177,8 @@ h2.main__title{
 }
 
 .seanses__item img{
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in;
 }
 .seanses__item-top,
 .seanses__item-bottom{
@@ -188,6 +189,11 @@ h2.main__title{
 }
 figure{
     position: relative;
+    overflow: hidden;
+}
+figure:hover>img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
 }
 figcaption{
     position: absolute;
@@ -295,3 +301,209 @@ figcaption > a:hover{
     border-radius: 3px;
 }
 /*----------------REVIEWS---------------*/
+
+/*----------------ABOUT---------------*/
+.about{
+    text-align: center;
+}
+
+.about__item{
+    display: flex;
+    padding: 0 125px;
+    gap: 84px;
+
+    margin-bottom: 100px;
+}
+.about__item:nth-child(2n+1){
+    flex-direction: row-reverse;
+}
+
+.item_about__about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 0 1 50%;
+   /* padding-right: 84px;*/
+}
+.item_about__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: left;
+
+    margin-bottom: 30px;
+}
+.item_about__text{
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: start;
+
+    margin-bottom: 20px;
+}
+.item_about__text:last-child{
+    margin-bottom: 0;
+}
+.item_about__img{
+    padding-bottom: 35%;
+    flex: 0 1 50%;
+}
+.item_about__img > img{
+    border-radius: 12px;
+}
+/*----------------ABOUT---------------*/
+
+
+/*----------------PRICES---------------*/
+.prices{
+    text-align: center;
+}
+
+.prices__item{
+    display: flex;
+    gap: 134px;
+
+    padding: 0 125px;
+}
+.prices__img{
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.prices__img > img{
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+figcaption.prices__cap{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+
+    margin: 0 auto;
+}
+
+.prices__prices{
+    display: flex;
+    gap: 100px;
+    flex: 0 1 50%;
+    align-items: center;
+}
+.prices__name > .prices__list{
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: left;
+
+    margin-bottom: 31px;
+}
+.prices__name > .prices__list:last-child{
+    margin-bottom: 0;
+}
+
+.prices__cost > .prices__list{
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: left;
+
+    margin-bottom: 31px;
+}
+.prices__cost > .prices__list:last-child{
+    margin-bottom: 0;
+}
+
+.prices__name > .prices__list{
+    background: url(icon/prices/left.png)no-repeat left center;
+    padding-left: 38px;
+}
+/*----------------PRICES---------------*/
+
+/*----------------PLACES--------------*/
+.position__items{
+    display: flex;
+    gap: 48px;
+}
+.position__map{
+    flex: 0 1 66.667%;
+    
+}
+.position__map > img{
+    border-radius: 10px;
+}
+.position__places{
+    flex: 0 1 33.333%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.places__item{
+    padding: 35px 45px;
+
+    background: #018ABE;
+    border-radius: 10px;
+}
+h4.places__item_title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+    margin-bottom: 21px;
+}
+.places__item_adress,
+.places__item_metro,
+.places__item_reserv{
+    font-size: 14px;
+    line-height: 135%;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+    padding-left: 40px;
+}
+.places__item_adress{
+    background: url(icon/position/1.png)no-repeat left center;
+}
+.places__item_metro{
+    background: url(icon/position/2.png)no-repeat left center;
+}
+.places__item_reserv{
+    margin-bottom: 30px;
+    background: url(icon/position/3.png)no-repeat left center;
+}
+.places__item_btn{
+    background: #FFFFFF;
+    color: #018ABE;
+}
+/*----------------PLACES---------------*/
+
+
+/*----------------FOOTER---------------*/
+.footer__wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footer__date{
+    font-size: 14px;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+.footer__creator{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+section:last-of-type{
+    margin-bottom: 60px;
+}
+
+/*----------------FOOTER---------------*/
